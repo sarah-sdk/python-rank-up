@@ -1,4 +1,4 @@
-# 🚀 Python Ramp-up – Été 2025
+# 🚀 Python Rank-up – Été 2025
 
 Bienvenue !  
 Ce repo regroupe ma progression Python en vue de mon alternance à partir du **1er septembre 2025**, dans une entreprise avec une stack **React/Django**.

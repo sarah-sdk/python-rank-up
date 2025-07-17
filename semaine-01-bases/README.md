@@ -28,7 +28,7 @@
 ## ✅ Plan de travail
 
 ### 1. Exercices fondamentaux (dans `/exercices/`)
-- [ ] Déclaration et affichage de variables
+- [X] Déclaration et affichage de variables
 - [ ] Conditions simples (pair/impair, plus grand que...)
 - [ ] Boucles `for` et `while`
 - [ ] Parcours et manipulation de listes
