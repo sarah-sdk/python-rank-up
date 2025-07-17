@@ -77,5 +77,5 @@ Ce repo est mon espace d'apprentissage structuré, versionné, partageable, et v
 
 ## 📬 Contact
 
-💼 LinkedIn : [TonProfil](https://www.linkedin.com/in/sarah-smandack)  
+💼 LinkedIn : [Sarah Smandack](https://www.linkedin.com/in/sarah-smandack)  
 📫 Email pro : sarah.smandack@outlook.fr 
