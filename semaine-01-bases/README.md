@@ -29,8 +29,8 @@
 
 ### 1. Exercices fondamentaux (dans `/exercices/`)
 - [X] Déclaration et affichage de variables
-- [ ] Conditions simples (pair/impair, plus grand que...)
-- [ ] Boucles `for` et `while`
+- [X] Conditions simples (pair/impair, plus grand que...)
+- [X] Boucles `for` et `while`
 - [ ] Parcours et manipulation de listes
 - [ ] Dictionnaires : création, ajout, lecture
 
