@@ -31,7 +31,7 @@
 - [X] Déclaration et affichage de variables
 - [X] Conditions simples (pair/impair, plus grand que...)
 - [X] Boucles `for` et `while`
-- [ ] Parcours et manipulation de listes
+- [X] Parcours et manipulation de listes
 - [ ] Dictionnaires : création, ajout, lecture
 
 ### 2. Mini-projet : Convertisseur d’unités (dans `/mini-projet/`)
