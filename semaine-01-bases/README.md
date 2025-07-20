@@ -32,7 +32,7 @@
 - [X] Conditions simples (pair/impair, plus grand que...)
 - [X] Boucles `for` et `while`
 - [X] Parcours et manipulation de listes
-- [ ] Dictionnaires : création, ajout, lecture
+- [X] Dictionnaires : création, ajout, lecture
 
 ### 2. Mini-projet : Convertisseur d’unités (dans `/mini-projet/`)
 > Un petit programme CLI qui permet de convertir :
@@ -66,7 +66,7 @@ Fonctionnement :
 
 ## 🔚 Fin de semaine : check
 
-- [ ] Syntaxe de base comprise
-- [ ] Scripts simples réalisés
-- [ ] Mini-projet terminé et fonctionnel
-- [ ] Prêt pour les fonctions & fichiers
+- [X] Syntaxe de base comprise
+- [X] Scripts simples réalisés
+- [X] Mini-projet terminé et fonctionnel
+- [X] Prêt pour les fonctions & fichiers
