@@ -26,7 +26,7 @@
 ## ✅ Plan de travail
 
 ### 1. Exercices (dans `/exercices/`)
-- [ ] Fonctions simples (addition, factorielle, etc.)
+- [X] Fonctions simples (addition, factorielle, etc.)
 - [ ] Fonctions avec conditions/boucles internes
 - [ ] Lecture d’un fichier texte ligne par ligne
 - [ ] Écriture dans un fichier (logs, scores, etc.)
