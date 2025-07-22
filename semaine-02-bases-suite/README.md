@@ -27,7 +27,7 @@
 
 ### 1. Exercices (dans `/exercices/`)
 - [X] Fonctions simples (addition, factorielle, etc.)
-- [ ] Fonctions avec conditions/boucles internes
+- [X] Fonctions avec conditions/boucles internes
 - [ ] Lecture d’un fichier texte ligne par ligne
 - [ ] Écriture dans un fichier (logs, scores, etc.)
 
