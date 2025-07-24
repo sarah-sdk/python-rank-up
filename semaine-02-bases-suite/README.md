@@ -29,7 +29,7 @@
 - [X] Fonctions simples (addition, factorielle, etc.)
 - [X] Fonctions avec conditions/boucles internes
 - [X] Lecture d’un fichier texte ligne par ligne
-- [ ] Écriture dans un fichier (logs, scores, etc.)
+- [X] Écriture dans un fichier (logs, scores, etc.)
 
 ### 2. Mini-projet : Carnet de contacts
 > Un script permettant de stocker et retrouver des contacts (nom, téléphone, email) dans un fichier `.csv`.
