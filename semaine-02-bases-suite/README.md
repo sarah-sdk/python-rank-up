@@ -35,9 +35,9 @@
 > Un script permettant de stocker et retrouver des contacts (nom, téléphone, email) dans un fichier `.csv`.
 
 Fonctionnalités :
-- Ajouter un contact
-- Rechercher un contact
-- Afficher tous les contacts
+- [X] Ajouter un contact
+- [ ] Rechercher un contact
+- [X] Afficher tous les contacts
 
 ---
 
