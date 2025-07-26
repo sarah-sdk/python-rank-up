@@ -36,7 +36,7 @@
 
 Fonctionnalités :
 - [X] Ajouter un contact
-- [ ] Rechercher un contact
+- [X] Rechercher un contact
 - [X] Afficher tous les contacts
 
 ---

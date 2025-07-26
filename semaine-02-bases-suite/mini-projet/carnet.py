@@ -17,6 +17,28 @@ def add_contact(doc):
   print(f"Lastname: {lastname} - Firstname: {firstname} - Email: {email} - Phone number: {phone_number}")
 
 # search_contact()
+def search_contact(doc):
+  with open(doc, 'r') as file:
+    lines = file.readlines()
+  
+  headers = lines[0].strip().split(', ')
+  contacts = lines[1:]
+
+  contacts_list = []
+
+  for contact in contacts:
+    data = contact.strip().split(', ')
+    person = dict(zip(headers, data))
+    contacts_list.append(person)
+  
+  firstname = input("What's the firstname of the person you're looking for? ")
+
+  for person in contacts_list:
+    if person["firstname"].lower() == firstname.lower():
+      print(f'✅ Find: ', person)
+      break
+    else:
+      print('Any contact find')
 
 #all_contacts()
 def all_contacts(doc):
@@ -53,8 +75,13 @@ while True:
 
   if choice == 1:
     result = add_contact(link)
-  # elif choice == 2:
-  #   result = search_contact(link)
+  elif choice == 2:
+    # print("How do you want to search a contact?")
+    # print('1- By firstname')
+    # print('2- By lastname')
+    # print('3- By email')
+    # print('4- By phone number')
+    result = search_contact(link)
   elif choice == 3:
     result = all_contacts(link)
 
