@@ -7,7 +7,11 @@ class Car:
   def speed_up(self):
     self.speed += 10
     print(f'The {self.color} car accelerates at a speed of {self.speed} km/h.')
+  
+  def honk(self):
+    print('Pouet pouet 🚗')
 
 my_car = Car('Mustang', 'grey')
 print(my_car.brand)
 my_car.speed_up()
+my_car.honk()
