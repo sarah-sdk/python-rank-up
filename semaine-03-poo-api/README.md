@@ -26,9 +26,9 @@
 ## ✅ Plan de travail
 
 ### 1. Exercices (dans `/exercices/`)
-- [ ] Créer une classe `Voiture`, `Animal`, etc.
-- [ ] Ajouter des comportements (méthodes)
-- [ ] Faire des appels à une API publique (ex. PokéAPI, OpenWeatherMap, etc.)
+- [X] Créer une classe `Voiture`, `Animal`, etc.
+- [X] Ajouter des comportements (méthodes)
+- [X] Faire des appels à une API publique (ex. PokéAPI, OpenWeatherMap, etc.)
 
 ### 2. Mini-projet : API Pokémon
 > Une mini-app en ligne de commande qui affiche les infos d’un Pokémon via la PokéAPI.
