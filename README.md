@@ -51,9 +51,9 @@ Chaque dossier `semaine-XX` contient :
 
 ## ✅ Suivi de progression
 
-- [x] Semaine 01 : Bases
+- [X] Semaine 01 : Bases
 - [X] Semaine 02 : Fonctions & fichiers
-- [ ] Semaine 03 : POO + API
+- [X] Semaine 03 : POO + API
 - [ ] Semaine 04 : CLI app
 - [ ] Semaine 05 : Django
 - [ ] Semaine 06 : Django REST API
