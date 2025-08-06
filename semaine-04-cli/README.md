@@ -25,9 +25,9 @@
 ## ✅ Plan de travail
 
 ### 1. Exercices (dans `/exercices/`)
-- [ ] Scripts avec paramètres (`python mon_script.py --option`)
-- [ ] Utilisation de `argparse` pour des options variées
-- [ ] Fichiers d’entrée / sortie en argument
+- [X] Scripts avec paramètres (`python mon_script.py --option`)
+- [X] Utilisation de `argparse` pour des options variées
+- [X] Fichiers d’entrée / sortie en argument
 
 ### 2. Mini-projet : Gestionnaire de tâches
 > Une app CLI pour gérer une todo list dans un fichier local.
