@@ -29,33 +29,38 @@ def add_task(description):
 
   with open(doc, 'w') as file:
     json.dump(tasks, file, indent=2)
+  
+  return new_task
 
 def list_tasks():
   with open(doc, 'r') as file:
     tasks = json.load(file)
-
-    if not tasks:
-      print("Aucune tâche enregitrée")
-    else:
-      for task in tasks:
-        print(f"{task['id']} - {task['description']} - {'Fait' if task['done'] else 'A faire' }")
+    return tasks
 
 def task_done(task_id):
   with open(doc, 'r') as file:
     tasks = json.load(file)
 
+    task_done = None
     for task in tasks:
       if task['id'] == task_id:
         task['done'] = True
+        task_done = task
 
   with open(doc, 'w') as file:
     json.dump(tasks, file, indent=2)
+  
+  return task_done
 
 def delete_task(task_id):
   with open(doc, 'r') as file:
     tasks = json.load(file)
 
   filtered_tasks = [task for task in tasks if task['id'] != task_id]
+  if len(filtered_tasks) == len(tasks):
+    return False
 
   with open(doc, 'w') as file:
     json.dump(filtered_tasks, file, indent=2)
+
+  return True
