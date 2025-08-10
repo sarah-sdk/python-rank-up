@@ -1,6 +1,6 @@
 import json
 
-doc = "semaine-04-cli/mini-projet/todo.json"
+doc = "semaine-04-cli/mini-projet/data/todo.json"
 
 def add_task(description):
   with open(doc, 'r') as file:
