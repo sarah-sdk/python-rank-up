@@ -61,10 +61,10 @@ mini-projet/
 ├── todo.py               # Task management functions
 ├── README.md
 └── requirements.txt
+```
 
 ---
 
 ## Requirements
 - Python 3.8+
-- [rich](https://rich.readthedocs.io/en/stable/)
-```
+- [`rich`](https://rich.readthedocs.io/en/stable/)
