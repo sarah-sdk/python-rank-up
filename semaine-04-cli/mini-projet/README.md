@@ -66,5 +66,5 @@ mini-projet/
 
 ## Requirements
 - Python 3.8+
-- [`rich`](https://rich.readthedocs.io/en/stable/)
+- [rich](https://rich.readthedocs.io/en/stable/)
 ```
