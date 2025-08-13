@@ -1,0 +1,48 @@
+body {
+  font-family: "Helvetica", sans-serif;
+  background-color: #fdf6e3;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  color: #2a7ae2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+article {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.1s ease-in-out;
+}
+
+article:hover {
+  transform: translateY(-2px);
+}
+
+article h2 {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+
+article time {
+  font-size: 0.85em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+article p {
+  line-height: 1.5;
+}
