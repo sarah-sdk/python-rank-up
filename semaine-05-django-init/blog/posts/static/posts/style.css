@@ -31,16 +31,26 @@ article:hover {
   transform: translateY(-2px);
 }
 
-article h2 {
+article header {
+  display: grid;
+  grid-template-columns: 2fr;
+}
+
+article header h2 {
   font-weight: bold;
   font-size: 1.4em;
   margin-bottom: 8px;
+  grid-column: span 2;
 }
 
-article time {
+article header time {
   font-size: 0.85em;
   color: #666;
   margin-bottom: 10px;
+}
+
+article header a {
+  text-decoration: none;
 }
 
 article p {
