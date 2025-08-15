@@ -1,33 +1,23 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{% static 'posts/style.css' %}">
-  <title>Liste des posts</title>
-</head>
-<body>
-  <div class="container">
-    <h1>📝 Mes Posts</h1>
+{% extends "base.html" %}
 
-    {% if posts %}
-      {% for post in posts %}
-        <article>
-          <header>
-            <h2>{{ post.title }}</h2>
-            <time>Créé le {{ post.created_at|date:"d/m/Y H:i" }}</time>
-            <div>
-              <a href="{% url 'post_edit' post.pk %}">✏️</a>
-              <a href="{% url 'post_delete' post.pk %}">🗑️</a>
-            </div>
-          </header>
-          <p>{{ post.content }}</p>
-        </article>
-      {% endfor %}
-    {% else %}
-      <p>Aucun post pour le moment. 😢</p>
-    {% endif %}
-  </div>
-</body>
-</html>
+{% block title %}Liste des posts{% endblock %}
+
+{% block content %}
+  {% if posts %}
+    {% for post in posts %}
+      <article>
+        <header>
+          <h1>{{ post.title }}</h1>
+          <time>Créé le {{ post.created_at|date:"d/m/Y H:i" }}</time>
+        </header>
+        <p>{{ post.content }}</p>
+        <div>
+          <a href="{% url 'post_edit' post.pk %}" class="confirm">Modifier</a>
+          <a href="{% url 'post_delete' post.pk %}" class="delete">Supprimer</a>
+        </div>
+      </article>
+    {% endfor %}
+  {% else %}
+    <p>Aucun post pour le moment. 😢</p>
+  {% endif %}
+{% endblock %}

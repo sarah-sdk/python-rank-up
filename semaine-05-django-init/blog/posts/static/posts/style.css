@@ -1,7 +1,16 @@
+:root {
+  --bckgColor: #fdfaf6;
+  --secondBckgColor: #fff9f9;
+  --fontColor: #333333;
+  --accentColor: #e4a3b5;
+  --validColor: #d9e8e6;
+  --deleteColor: #f9e1e5;
+}
+
 body {
   font-family: "Helvetica", sans-serif;
-  background-color: #fdf6e3;
-  color: #333;
+  background-color: var(--bckgColor);
+  color: var(--fontColor);
   margin: 0;
   padding: 20px;
 }
@@ -12,9 +21,8 @@ body {
 }
 
 h1 {
-  color: #2a7ae2;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: .5rem;
 }
 
 article {
@@ -25,34 +33,52 @@ article {
   background-color: #fff;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.1s ease-in-out;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  & header {
+    display: grid;
+    grid-template-columns: 2fr;
+
+    & h1 {
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin: 1rem;
+      grid-column: span 2;
+      text-align: left;
+    }
+
+    & time {
+      font-size: .85rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  & div {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
 }
 
-article:hover {
-  transform: translateY(-2px);
-}
-
-article header {
-  display: grid;
-  grid-template-columns: 2fr;
-}
-
-article header h2 {
-  font-weight: bold;
-  font-size: 1.4em;
-  margin-bottom: 8px;
-  grid-column: span 2;
-}
-
-article header time {
-  font-size: 0.85em;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-article header a {
+a {
   text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  width: 5rem;
+  text-align: center;
+  color: var(--fontColor);
 }
 
-article p {
-  line-height: 1.5;
+.confirm,
+.confirmBtn {
+  background-color: var(--validColor);
+}
+
+.delete,
+.deleteBtn {
+  background-color: var(--deleteColor);
 }
