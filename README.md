@@ -55,7 +55,7 @@ Chaque dossier `semaine-XX` contient :
 - [X] Semaine 02 : Fonctions & fichiers
 - [X] Semaine 03 : POO + API
 - [X] Semaine 04 : CLI app
-- [ ] Semaine 05 : Django
+- [X] Semaine 05 : Django
 - [ ] Semaine 06 : Django REST API
 
 ---
