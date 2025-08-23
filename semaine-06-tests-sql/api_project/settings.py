@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'exercices',
     'pokemon',
-    'tasks'
+    'tasks',
+    'django_filters'
 ]
 
 MIDDLEWARE = [
