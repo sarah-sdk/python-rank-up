@@ -26,9 +26,9 @@
 ## ✅ Plan de travail
 
 ### 1. Exercices (dans `/exercices/`)
-- [ ] Création d’un modèle exposé via API
-- [ ] Endpoints `GET`, `POST`
-- [ ] Authentification simple
+- [X] Création d’un modèle exposé via API
+- [X] Endpoints `GET`, `POST`
+- [X] Authentification simple
 
 ### 2. Mini-projet : API de tâches
 > Une API pour gérer des tâches via front ou Postman.
