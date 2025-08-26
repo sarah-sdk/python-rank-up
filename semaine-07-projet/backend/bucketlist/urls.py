@@ -18,10 +18,12 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from bucket.views import BucketViewSet
+from users.views import MeView
 
 router = DefaultRouter()
 router.register(r'items', BucketViewSet, basename='items')
 urlpatterns = [
   path('admin/', admin.site.urls),
+  path('api/me/', MeView.as_view(), name='me'),
   path('api/', include(router.urls))
 ]
