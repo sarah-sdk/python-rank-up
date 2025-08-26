@@ -1,35 +1,8 @@
 @import url(./variables.css);
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+main {
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0 0;
 
-.navbar .avatar,
-.navbar div {
-  height: 2.5rem;
-  width: 2.5rem;
-  border: solid #eaeaea 1px;
-  border-radius: 50%;
-}
-
-.navbar h1,
-.navbar div svg {
-  color: var(--accentColor);
-}
-
-.navbar .avatar {
-  object-fit: cover;
-  overflow: hidden;
-}
-
-.navbar h1 {
-  font-size: 1.25rem;
-}
-
-.navbar div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-grow: 1;
 }

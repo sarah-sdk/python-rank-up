@@ -5,11 +5,13 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 /* ************************************************************************* */
 import App from "./App";
 import "./index.css";
+import { loadUserAndItems } from "./services/api";
 /* ************************************************************************* */
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    loader: loadUserAndItems,
   },
 ]);
 /* ************************************************************************* */

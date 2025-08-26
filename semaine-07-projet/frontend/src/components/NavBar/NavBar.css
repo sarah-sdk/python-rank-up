@@ -1,0 +1,32 @@
+@import url(../../variables.css);
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar h1 {
+  color: var(--secondaryColor);
+  font-size: 2rem;
+  width: 9ch;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar nav svg {
+  color: var(--secondaryColor);
+}
+
+.navbar nav .avatar {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
