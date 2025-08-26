@@ -3,3 +3,6 @@ fichiers_annexes/
 __pycache__/
 .env
 db.sqlite3
+.DS_Store
+.rank_up
+.project
