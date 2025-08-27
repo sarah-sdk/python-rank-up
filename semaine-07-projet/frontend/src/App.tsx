@@ -1,24 +1,13 @@
 import { useLoaderData } from "react-router-dom";
-import { Checked, Unchecked } from "../public/Checkbox";
+import Item from "./components/Item/Item";
 import NavBar from "./components/NavBar/NavBar";
+import type { ItemType, UserType } from "./types/types";
 import "./App.css";
-
-type User = {
-  id: number;
-  username: string;
-};
-
-type Item = {
-  id: number;
-  category: string;
-  done: boolean;
-  name: string;
-};
 
 function App() {
   const { user, bucketList } = useLoaderData() as {
-    user: User;
-    bucketList: Item[];
+    user: UserType;
+    bucketList: ItemType[];
   };
 
   return (
@@ -27,8 +16,7 @@ function App() {
       <main>
         {bucketList.map((item) => (
           <figure key={item.id}>
-            {item.done ? <Checked /> : <Unchecked />}
-            <h1>{item.name}</h1>
+            <Item item={item} />
           </figure>
         ))}
       </main>
