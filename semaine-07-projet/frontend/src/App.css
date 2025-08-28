@@ -6,3 +6,8 @@ main {
 
   flex-grow: 1;
 }
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

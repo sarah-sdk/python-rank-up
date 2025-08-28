@@ -2,10 +2,11 @@ import { useState } from "react";
 import { Checked, Unchecked } from "../../../public/Checkbox";
 import type { ItemType } from "../../types/types";
 
-const token = import.meta.env.VITE_USER_TOKEN;
-const url = import.meta.env.VITE_API_URL;
-
-export default function Item({ item }: { item: ItemType }) {
+export default function Item({
+  item,
+  token,
+  url,
+}: { item: ItemType; token: string; url: string }) {
   const [isChecked, setIsChecked] = useState<boolean>(item.done);
 
   const handleChecked = async () => {
