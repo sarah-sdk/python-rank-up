@@ -6,6 +6,7 @@ import AddItemModal from "./components/Modals/AddItemModal";
 import NavBar from "./components/NavBar/NavBar";
 import type { ItemType, UserType } from "./types/types";
 import "./App.css";
+import DeleteItemModal from "./components/Modals/DeleteItemModal";
 import EditItemModal from "./components/Modals/EditItemModal";
 
 export default function App() {
@@ -73,6 +74,28 @@ export default function App() {
     }
   };
 
+  const [isDeleteItemOpen, setIsDeleteItemOpen] = useState<boolean>(false);
+  const [itemToDelete, setItemToDelete] = useState<ItemType>({
+    id: 0,
+    name: "",
+    done: false,
+    category: "",
+  });
+  const handleDeleteItemSubmit = async (item: ItemType) => {
+    const response = await fetch(`${url}/items/${item.id}/`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Token ${token}`,
+      },
+    });
+
+    if (response.ok) {
+      setIsDeleteItemOpen(false);
+      revalidator.revalidate();
+    }
+  };
+
   return (
     <>
       <NavBar name={user?.username} />
@@ -90,6 +113,10 @@ export default function App() {
                 onEdit={(it) => {
                   setItemToEdit(it);
                   setIsEditItemOpen(true);
+                }}
+                onDelete={(item) => {
+                  setItemToDelete(item);
+                  setIsDeleteItemOpen(true);
                 }}
               />
             </li>
@@ -111,6 +138,15 @@ export default function App() {
             setIsEditItemOpen(false);
           }}
           onSubmit={handleEditItemSubmit}
+        />
+
+        <DeleteItemModal
+          item={itemToDelete}
+          isOpen={isDeleteItemOpen}
+          onClose={() => {
+            setIsDeleteItemOpen(false);
+          }}
+          onSubmit={handleDeleteItemSubmit}
         />
       </main>
     </>

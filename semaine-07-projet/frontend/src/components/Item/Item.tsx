@@ -6,11 +6,13 @@ export default function Item({
   token,
   url,
   onEdit,
+  onDelete,
 }: {
   item: ItemType;
   token: string;
   url: string;
   onEdit: (item: ItemType) => void;
+  onDelete: (item: ItemType) => void;
 }) {
   const [isChecked, setIsChecked] = useState<boolean>(item.done);
 
@@ -46,7 +48,9 @@ export default function Item({
         <button type="button" onClick={() => onEdit(item)}>
           ✏️
         </button>
-        <button type="button">🗑️</button>
+        <button type="button" onClick={() => onDelete(item)}>
+          🗑️
+        </button>
       </div>
     </>
   );

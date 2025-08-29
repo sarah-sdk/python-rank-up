@@ -89,7 +89,13 @@ export default function EditItemModal({
         />
 
         <button type="submit">Ajouter</button>
-        <button type="button" onClick={onClose}>
+        <button
+          type="button"
+          onClick={() => {
+            dialogRef.current?.close();
+            onClose();
+          }}
+        >
           Annuler
         </button>
       </form>
