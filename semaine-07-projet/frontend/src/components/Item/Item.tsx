@@ -1,12 +1,17 @@
 import { useState } from "react";
-import { Checked, Unchecked } from "../../../public/Checkbox";
 import type { ItemType } from "../../types/types";
 
 export default function Item({
   item,
   token,
   url,
-}: { item: ItemType; token: string; url: string }) {
+  onEdit,
+}: {
+  item: ItemType;
+  token: string;
+  url: string;
+  onEdit: (item: ItemType) => void;
+}) {
   const [isChecked, setIsChecked] = useState<boolean>(item.done);
 
   const handleChecked = async () => {
@@ -30,10 +35,19 @@ export default function Item({
 
   return (
     <>
-      <button type="button" onClick={handleChecked}>
-        {isChecked ? <Checked /> : <Unchecked />}
-      </button>
-      <h1>{item.name}</h1>
+      <input
+        type="checkbox"
+        checked={isChecked}
+        onChange={handleChecked}
+        id={`item-${item.id}`}
+      />
+      <label htmlFor={`item-${item.id}`}>{item.name}</label>
+      <div>
+        <button type="button" onClick={() => onEdit(item)}>
+          ✏️
+        </button>
+        <button type="button">🗑️</button>
+      </div>
     </>
   );
 }
