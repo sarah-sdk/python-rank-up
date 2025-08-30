@@ -100,7 +100,7 @@ export default function App() {
     <>
       <NavBar name={user?.username} />
       <main>
-        <button type="button" onClick={handleAddItemOpen}>
+        <button type="button" className="add-btn" onClick={handleAddItemOpen}>
           <Add />
         </button>
         <ul>

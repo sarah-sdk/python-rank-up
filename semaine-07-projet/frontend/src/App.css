@@ -7,6 +7,11 @@ main {
   flex-grow: 1;
 }
 
+.add-btn {
+  margin-top: 2rem;
+  float: right;
+}
+
 main ul {
   display: grid;
   grid-auto-rows: 3rem;
@@ -20,10 +25,6 @@ main ul li {
   grid-template-columns: .25fr 1fr .5fr;
   align-items: center;
 }
-
-/* main ul li input[type="checkbox"] {
-  transform: scale(0.7);
-} */
 
 main ul li label {
   font-family: var(--titleFont);

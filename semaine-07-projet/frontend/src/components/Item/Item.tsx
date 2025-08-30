@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Edit } from "../../../public/Edit";
+import { Trash } from "../../../public/Trash";
 import type { ItemType } from "../../types/types";
 
 export default function Item({
@@ -46,10 +48,10 @@ export default function Item({
       <label htmlFor={`item-${item.id}`}>{item.name}</label>
       <div>
         <button type="button" onClick={() => onEdit(item)}>
-          ✏️
+          <Edit />
         </button>
         <button type="button" onClick={() => onDelete(item)}>
-          🗑️
+          <Trash />
         </button>
       </div>
     </>
